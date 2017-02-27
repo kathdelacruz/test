@@ -320,3 +320,15 @@ input {
   line-height: 40px;
   color: white;
 }
+
+@media screen and (max-width: 1000px) {
+  .image-background { flex-basis: 40%; }
+  .button-with-icon span { margin-left: 20px; }
+  .content { left: 30px; }
+}
+
+@media screen and (max-width: 768px) {
+  .image-background { display: none; }
+  .login { flex-basis: 80%; }
+}
+
