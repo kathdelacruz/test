@@ -7,7 +7,7 @@ function LoginController($scope, $state, $location, $http) {
   $scope.login = function(form, user) {
     $scope.focusEmail = false;
     $scope.focusPassword = false;
-    var url = 'http://sandbox.urbaner.com/api/client/authenticate';
+    var url = [URL_API];
 
     $http({
       method: "POST",
