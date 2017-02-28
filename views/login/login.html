@@ -1,0 +1,42 @@
+<div class="container flex-wrapper">
+  <form ng-submit="login(form, user)" class="login card">
+    <img src="assets/images/logo.png" alt="Logo" title="Empresa" class="logo">
+    <div class="input-wrapper" ng-class="{active: focusEmail === true}">
+      <div class="icon-wrapper">
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+      <input type="text" placeholder="Correo o username" ng-model="user.email" ng-focus="focusEmail=true" ng-blur="focusEmail=false">
+    </div>
+    <div class="input-wrapper" ng-class="{active: focusPassword === true}">
+      <div class="icon-wrapper">
+        <i class="fa fa-key" aria-hidden="true"></i>
+      </div>
+      <input type="password" placeholder="Contraseña" ng-model="user.password" ng-focus="focusPassword=true" ng-blur="focusPassword=false">
+      <div class="eye-password">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+      </div>
+    </div>
+    <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
+    <button class="button primary" type="submit">Inicia sesión</button>
+    <div class="line">
+      <p>O</p>
+    </div>
+    <button class="button button-with-icon linkedin" type="button">
+      <div class="icon-box">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </div>
+      <span>Logueate con Linkedin</span>
+    </button>
+  </form>
+  <div class="image-background">
+    <img src="assets/images/paisaje.jpg" alt="" class="image">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="circle">
+        <i class="fa fa-play" aria-hidden="true"></i>
+      </div>
+      <p class="title">Planea tu viaje</p>
+      <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+    </div>
+  </div>
+</div>

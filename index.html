@@ -1,56 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html ng-app="main-app" lang="es">
 <head>
+  <base href="/">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/styles.css">
-  <script src="assets/js/jquery-3.1.1.min.js"></script>
-  <script src="assets/js/app.js"></script>
+<!--   <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <script src="assets/js/app.js"></script> -->
   <script src="https://use.fontawesome.com/a60d3aea61.js"></script>
 </head>
 <body>
-  <div class="container flex-wrapper">
-    <div class="login card">
-      <img src="images/logo.png" alt="Logo" title="Empresa" class="logo">
-      <div class="input-wrapper">
-        <div class="icon-wrapper">
-          <i class="fa fa-user" aria-hidden="true"></i>
-        </div>
-        <input type="text" placeholder="Correo o username">
-      </div>
-      <div class="input-wrapper">
-        <div class="icon-wrapper">
-          <i class="fa fa-key" aria-hidden="true"></i>
-        </div>
-        <input type="password" placeholder="Contraseña">
-        <div class="eye-password">
-          <i class="fa fa-eye" aria-hidden="true"></i>
-        </div>
-      </div>
-      <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
-      <button class="button primary">Inicia sesión</button>
-      <div class="line">
-        <p>O</p>
-      </div>
-      <button class="button button-with-icon linkedin">
-        <div class="icon-box">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </div>
-        <span>Logueate con Linkedin</span>
-      </button>
-    </div>
-    <div class="image-background">
-      <img src="images/paisaje.jpg" alt="" class="image">
-      <div class="overlay"></div>
-      <div class="content">
-        <div class="circle">
-          <i class="fa fa-play" aria-hidden="true"></i>
-        </div>
-        <p class="title">Planea tu viaje</p>
-        <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-      </div>
-    </div>
-  </div>
+  <div ui-view ></div>
 </body>
+<script src="assets/js/angular.js"></script>
+<script src="assets/js/angular-ui-router.js"></script>
+<script src="app.js"></script>
+<script src="views/login/loginController.js"></script>
 </html>

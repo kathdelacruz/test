@@ -106,18 +106,16 @@ body {
 .login { flex-basis: 40%; }
 
 .logo {
-  width: 120px;
   margin: 0 0 20px;
+  width: 120px;
 }
 
 i {
-  color: #E0E2E5;
+  color: #e0e2e5;
   transition: all .2s ease;
 }
 
-::-webkit-input-placeholder {
-   color: #E0E2E5;
-}
+::-webkit-input-placeholder { color: #e0e2e5; }
 
 input {
   border: 1px solid #E0E2E5;
@@ -209,10 +207,7 @@ input {
   align-items: center;
 }
 
-.button-with-icon span {
-  margin-left: 40px;
-}
-
+.button-with-icon span { margin-left: 40px; }
 .linkedin { background-color: #283E4A; }
 .linkedin:hover { background-color: #23282b; }
 
@@ -255,61 +250,59 @@ input {
 }
 
 .image-background {
-  flex-basis: 60%;
-  position: relative;
-  height: 520px;
-  box-shadow: 3px 3px 10px 0px #dbdde3;
   border-radius: 4px;
+  box-shadow: 3px 3px 10px 0 #dbdde3;
+  flex-basis: 60%;
+  height: 520px;
+  position: relative;
 }
 
 .image {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
   position: absolute;
   top: 0;
-  left: 0;
-  height: 100%;
   width: 100%;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  object-fit: cover;
   z-index: 1;
 }
 
 .overlay {
+  background-color: black;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  bottom: 0;
+  left: 0;
+  opacity: .25;
   position: absolute;
+  right: 0;
   top: 0;
   width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 2;
-  background-color: black;
-  opacity: .25;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
 }
 
 .content {
-  position: absolute;
   bottom: 50px;
-  left: 50px;
-  z-index: 3;
   color: white;
+  left: 50px;
   max-width: 90%;
+  position: absolute;
+  z-index: 3;
 }
 
 .content .circle {
   background-color: #4B89FC;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  padding: 0 15px;
   border-radius: 50%;
+  display: inline-block;
+  height: 40px;
   margin-bottom: 30px;
+  padding: 0 15px;
+  width: 40px;
 }
 
-.content .title {
-  font-size: 2.5em;
-}
+.content .title { font-size: 2.5em; }
 
 .content .description {
   color: #aaa;
@@ -317,8 +310,8 @@ input {
 }
 
 .circle i {
-  line-height: 40px;
   color: white;
+  line-height: 40px;
 }
 
 @media screen and (max-width: 1000px) {
